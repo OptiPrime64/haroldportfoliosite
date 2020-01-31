@@ -6,9 +6,10 @@ import { HashLink as Link} from 'react-router-hash-link';
 
 const Styles = styled.div`
 .navbar{
-    background-color: #0d3d3d;
+    background-color: #468C87;
 }
 
+/* background-color: #0d3d3d; */
 a, .navbar-brand, .navbar-nav .nav-link{
     color: #C3DDDA;
 
@@ -38,7 +39,12 @@ export default function NavigationBar(){
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link>
-                            <Link smooth to="/contact/#sectioncontact"> Contact</Link>
+                            <Link smooth to="/Portfolio/#sectionportfolio"> Portfolio</Link>
+                        </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link>
+                            <Link smooth to="/Contact/#sectioncontact"> Contact</Link>
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>

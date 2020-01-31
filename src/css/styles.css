@@ -27,17 +27,27 @@
   }
 
 
-  .crop {
-    width: 250px;
-    height: 200px;
-    overflow: hidden;
-    margin: 40px 20px;
-    border-radius: 5%;
+.crop{
+  margin: 40px, 20px;
 }
 
   .crop img {
+    object-fit: cover;
     width: 250px;
+    height: 200px;
+    border-radius: 5%;
+    margin: 40px 10px 5px;
     /* margin: -75px 0 0 -100px; */
+}
+
+.crop img:hover {
+ opacity: .75;
+}
+
+.thumb {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #c3ddda;
 }
 
 
