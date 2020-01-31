@@ -1,0 +1,29 @@
+#navbar {
+  background-color: #0d3d3d;
+}
+
+.introdiv {
+  background-color: #74b9b4;
+  text-align: center;
+}
+
+.introdiv h1,
+h2 {
+  text-align: center;
+  font-family: "Sigmar One", cursive;
+  line-height: 1;
+  color: #c3ddda;
+}
+
+.introdiv h1 {
+  font-size: 100px;
+  margin-top: 5%;
+}
+
+.myName {
+  margin-right: 5%;
+}
+
+#aboutme {
+  text-align: center;
+}
