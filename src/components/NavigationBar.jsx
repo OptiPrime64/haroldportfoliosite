@@ -10,7 +10,7 @@ const Styles = styled.div`
 }
 
 a, .navbar-brand, .navbar-nav .nav-link{
-    color: #bbb;
+    color: #C3DDDA;
 
     &:hover{
         color:white;
@@ -21,11 +21,11 @@ a, .navbar-brand, .navbar-nav .nav-link{
 export default function NavigationBar(){
     return  (
     <Styles>
-        <Navbar expand="md" variant="dark">
+        <Navbar expand="md" variant="dark" fixed="top" >
             <Navbar.Brand href="/">Harold Jennett</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
+                <Nav className="ml-auto">
                     <Nav.Item>
                         <Nav.Link>
                             <Link smooth to="/Title/#sectionhome"> Home</Link>

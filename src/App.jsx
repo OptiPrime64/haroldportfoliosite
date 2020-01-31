@@ -4,6 +4,7 @@ import "./css/styles.css";
 import NavigationBar from "./components/NavigationBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Aboutme from "./components/Aboutme";
+import Portfolio from "./components/Portfolio";
 
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
       <Router>
         <NavigationBar />
         <Title />
+        <Portfolio />
         <Aboutme />
       </Router>
     </React.Fragment>
