@@ -1,6 +1,5 @@
 import React from "react";
 import Title from "./Title";
-import NavigationBar from "./NavigationBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Aboutme from "./Aboutme";
 import Portfolio from "./Portfolio";
@@ -9,8 +8,7 @@ import Portfolio from "./Portfolio";
 export default function MainPage() {
   return (
     <React.Fragment>
-      <Router>
-        
+      <Router>   
         <Title />
         <Portfolio />
         <Aboutme />

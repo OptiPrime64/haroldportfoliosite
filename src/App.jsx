@@ -15,10 +15,8 @@ export default function App() {
     <React.Fragment>
       <Router>
       <NavigationBar />
-      <Title />
-      <Portfolio />
-      <Aboutme />
         <Switch>
+          <Route exact path="/" component={MainPage} />
           <Route path="/FullArtPage" component={FullArtPage} />
         </Switch>
       </Router>
