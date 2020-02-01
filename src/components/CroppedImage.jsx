@@ -1,19 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
-const cropImage = [];
-
 function Portfolio(fromApp) {
     return (
 
 
-        <div class="row">
-            <div class="container col-md-6 col-lg-4">
-                <div class="crop">
-                    <img src={fromApp}/>
+        <div class="container col-sm-6 col-md-4 col-lg-3">
+                <div class="thumb">
+                    <div class="crop">
+                        <img src={fromApp.img} alt={fromApp.name} />
+                    </div>
+                    <h6>{fromApp.name}</h6>
                 </div>
             </div>
-        </div>
 
 
 
