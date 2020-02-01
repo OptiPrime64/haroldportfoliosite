@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Title(){
   return (
-    <div id="sectionhome" className="introdiv">
+    <div id="sectiontitle" className="introdiv">
       <div className="container">
         <div className="row">
           <div className="col" lg={6}>

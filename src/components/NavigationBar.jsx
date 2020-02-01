@@ -1,8 +1,8 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
 import styled from "styled-components";
-import { HashLink as Link} from 'react-router-hash-link';
+import { HashLink as HLink} from 'react-router-hash-link';
 
 const Styles = styled.div`
 .navbar{
@@ -29,22 +29,27 @@ export default function NavigationBar(){
                 <Nav className="ml-auto">
                     <Nav.Item>
                         <Nav.Link>
-                            <Link smooth to="/Title/#sectionhome"> Home</Link>
+                            <HLink smooth to="/Title/#sectiontitle">Home</HLink>
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link>
-                            <Link smooth to="/Aboutme/#sectionabout"> About</Link>
+                            <HLink smooth to="/Aboutme/#sectionabout">About</HLink>
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link>
-                            <Link smooth to="/Portfolio/#sectionportfolio"> Portfolio</Link>
+                            <HLink smooth to="/Portfolio/#sectionportfolio">Portfolio</HLink>
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link>
-                            <Link smooth to="/Contact/#sectioncontact"> Contact</Link>
+                            <HLink smooth to="/Contact/#sectioncontact">Contact</HLink>
+                        </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link>
+                            <Link smooth to="/FullArtPage">Full Art Page</Link>
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>
@@ -53,3 +58,4 @@ export default function NavigationBar(){
     </Styles >
 );
 }
+

@@ -1,4 +1,3 @@
-import React from "react";
 import mm from "./assets/mm.png";
 import flash from "./assets/flash.png";
 import capmarvel from "./assets/capmarvel.png";
