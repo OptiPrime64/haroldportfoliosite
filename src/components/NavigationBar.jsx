@@ -22,12 +22,13 @@ a, .navbar-brand, .navbar-nav .nav-link{
 export default function NavigationBar(){
     return  (
     <Styles>
-        <Navbar expand="md" variant="dark" fixed="top" >
+   
+        <Navbar expand="md" variant="dark"  fixed="top">
             <Navbar.Brand href="/">Harold Jennett</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
-                    <Nav.Item>
+                <Nav.Item>
                         <Nav.Link>
                             <HLink smooth to="/Title/#sectiontitle">Home</HLink>
                         </Nav.Link>
@@ -45,11 +46,6 @@ export default function NavigationBar(){
                     <Nav.Item>
                         <Nav.Link>
                             <HLink smooth to="/Contact/#sectioncontact">Contact</HLink>
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link>
-                            <Link smooth to="/FullArtPage">Full Art Page</Link>
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>

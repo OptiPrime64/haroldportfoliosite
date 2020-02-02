@@ -64,5 +64,13 @@
   }
 
 
- 
+  .huge {
+    text-align: center;
+    margin-top: 100px;
+    width: 600px;
+  }
+
+  .divhuge {
+    text-align: center;
+  }
   

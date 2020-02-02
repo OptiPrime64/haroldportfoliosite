@@ -5,12 +5,22 @@ import Aboutme from "./Aboutme";
 import Portfolio from "./Portfolio";
 
 
-export default function MainPage() {
+export default function MainPage(fromApp) {
+
+
+  function pressed() {
+    fromApp.turnOn();
+  }
+
+
   return (
     <React.Fragment>
-      <Router>   
+      <Router>
+       
         <Title />
-        <Portfolio />
+        <Portfolio
+         presslink={pressed} 
+        />
         <Aboutme />
       </Router>
     </React.Fragment>
@@ -18,5 +28,4 @@ export default function MainPage() {
 }
 
 
-           
-     
+

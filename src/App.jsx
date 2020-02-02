@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MainPage from "./components/MainPage";
 import NavigationBar from "./components/NavigationBar";
 import Title from "./components/Title";
@@ -7,22 +7,45 @@ import FullArtPage from "./components/FullArtPage";
 import Portfolio from "./components/Portfolio";
 import "./css/styles.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Onbutton from "./components/Onbutton";
 
 
 
 export default function App() {
+
+  let [onState, setOnState] = useState(true);
+
+
+  function turnItOn() {
+    setOnState(!onState);
+  }
+
   return (
     <React.Fragment>
       <Router>
-      <NavigationBar />
-        <Switch>
-          <Route exact path="/" component={MainPage} />
-          <Route path="/FullArtPage" component={FullArtPage} />
-        </Switch>
+        <NavigationBar />
+        
+        {onState && (
+          <MainPage
+          turnOn={turnItOn}
+          />
+
+        )}
+        {!onState && (
+          <FullArtPage
+          artTurnOn={turnItOn}
+          />
+        )}
+       
+       
       </Router>
     </React.Fragment>
   );
 }
+
+
+
+
 
 
 {/* <Switch>

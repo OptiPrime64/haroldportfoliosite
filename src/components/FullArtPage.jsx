@@ -1,15 +1,28 @@
 import React from "react";
-import NavigationBar from "./NavigationBar";
+import capmarvel from "../assets/capmarvel.png";
+import "../css/styles.css";
 
-export default function FullArtPage() {
-    return (
+
+export default function FullArtPage(fromApp) {
+
+function backToMain(){
+  fromApp.artTurnOn();
+}
+
+  return (
+    <div className="divhuge">
+
       <div>
-        
-          {/* <NavigationBar /> */}
-          <h1>Hello World!</h1>
+        <img className="huge" src={capmarvel} />
+      </div>
+      <button onClick={backToMain} >Return</button>
 
-          
-         
-          </div>
-    );
-  }
+
+
+
+    </div>
+  );
+}
+
+
+// href="/"
