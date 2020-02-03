@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio";
 import "./css/styles.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Onbutton from "./components/Onbutton";
+import Popup3 from "./components/Popup3";
 
 
 
@@ -23,8 +24,8 @@ export default function App() {
   return (
     <React.Fragment>
       <Router>
-        <NavigationBar />
-        
+        {/* <NavigationBar /> */}
+        <Popup3 />
         {onState && (
           <MainPage
           turnOn={turnItOn}
