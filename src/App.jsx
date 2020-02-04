@@ -9,6 +9,7 @@ import "./css/styles.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Onbutton from "./components/Onbutton";
 import Popup3 from "./components/Popup3";
+import Contact from "./components/Contact";
 
 
 
@@ -20,7 +21,10 @@ export default function App() {
     <React.Fragment>
       <Router>
         <NavigationBar />
-        <MainPage />
+        <Title />
+        <Portfolio />
+        <Aboutme />
+        <Contact />
       </Router>
     </React.Fragment>
   );

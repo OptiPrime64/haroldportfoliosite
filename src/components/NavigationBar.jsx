@@ -35,12 +35,12 @@ export default function NavigationBar(){
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link>
-                            <HLink smooth to="/Aboutme/#sectionabout">About</HLink>
+                            <HLink smooth to="/Portfolio/#sectionportfolio">Portfolio</HLink>
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link>
-                            <HLink smooth to="/Portfolio/#sectionportfolio">Portfolio</HLink>
+                            <HLink smooth to="/Aboutme/#sectionabout">About</HLink>
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
