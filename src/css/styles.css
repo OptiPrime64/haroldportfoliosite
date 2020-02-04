@@ -97,3 +97,22 @@ div.jumbotron h2 {
 .imageClosingButton {
   position: relative;
 }
+
+.modal-header {
+  border-bottom: none;
+  padding: 0;
+  padding-right:1rem;
+}
+
+.modal-body{
+  padding: 0;
+}
+.close{
+  color:white;
+}
+
+.modal-content{
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}

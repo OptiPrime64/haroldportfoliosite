@@ -18,11 +18,11 @@ export default function Popup3() {
 
             <Modal size="lg" show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                   
+
                 </Modal.Header>
                 <Modal.Body>
 
-                    <img style={{width:"100%"}} src={awktea} />
+                    <img style={{ width: "100%" }} src={awktea} />
 
                 </Modal.Body>
 

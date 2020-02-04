@@ -14,31 +14,13 @@ import Popup3 from "./components/Popup3";
 
 export default function App() {
 
-  let [onState, setOnState] = useState(true);
 
-
-  function turnItOn() {
-    setOnState(!onState);
-  }
 
   return (
     <React.Fragment>
       <Router>
-        {/* <NavigationBar /> */}
-        <Popup3 />
-        {onState && (
-          <MainPage
-          turnOn={turnItOn}
-          />
-
-        )}
-        {!onState && (
-          <FullArtPage
-          artTurnOn={turnItOn}
-          />
-        )}
-       
-       
+        <NavigationBar />
+        <MainPage />
       </Router>
     </React.Fragment>
   );
